@@ -1,0 +1,113 @@
+/* src/components/Layout/Footer/Footer.module.css */
+.footerContainer {
+  background-color: #000; /* Hoặc màu đen tuyền như trong ảnh #111 */
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  font-family: Arial, sans-serif; /* Chọn font phù hợp */
+  border-top: 1px solid #333; /* Viền mỏng phía trên nếu muốn */
+  min-height: 100px; /* Chiều cao tối thiểu */
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px; /* Điều chỉnh kích thước */
+  font-weight: bold;
+  margin-right: 15px;
+  /* Nếu dùng ảnh logo thì dùng: */
+  /* content: url('path/to/ufc-logo.svg'); */
+  /* width: 80px; */
+  /* height: auto; */
+}
+
+.languageSelector {
+  position: relative; /* Cho dropdown menu */
+  margin-left: 10px;
+}
+
+.langButton {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #555; /* Viền cho button */
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.langButton:hover {
+  border-color: #fff;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 10px; /* Kích thước mũi tên */
+}
+
+.langDropdown {
+  position: absolute;
+  bottom: 100%; /* Hiển thị dropdown phía trên nút */
+  left: 0;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px 0; /* Khoảng cách nhỏ với button */
+  min-width: 150px; /* Độ rộng tối thiểu của dropdown */
+  z-index: 1000; /* Đảm bảo nằm trên các element khác */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.langDropdown li {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.langDropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.rightSection {
+  display: flex;
+  gap: 40px; /* Khoảng cách giữa cột HELP và LAW */
+}
+
+.linksColumn h4 {
+  font-size: 14px;
+  font-weight: bold; /* Chữ HELP và LAW in đậm như trong ảnh */
+  margin-bottom: 10px;
+  color: #aaa; /* Màu chữ nhạt hơn cho tiêu đề cột */
+  text-transform: uppercase;
+}
+
+.linksColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linksColumn li {
+  margin-bottom: 8px;
+}
+
+.linksColumn a {
+  color: #ccc; /* Màu chữ cho các link */
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.linksColumn a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
